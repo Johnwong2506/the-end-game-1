@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q Donuts</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="home.css" /> 
+    <style>
+      .carousel-item img {
+        /* Đảm bảo chiều cao ảnh cố định cho trải nghiệm tốt hơn */
+        height: 400px; 
+        object-fit: cover;
+      }
+      .card-img-top {
+          height: 200px;
+          object-fit: cover;
+      }
+      /* Đảm bảo nút chuyển slide luôn hiển thị trên ảnh */
+      .carousel-control-prev,
+      .carousel-control-next {
+        z-index: 2;
+      }
+      /* Tùy chỉnh nhỏ để footer đẹp hơn */
+      .site-footer {
+          background-color: #f8f9fa; 
+          border-top: 1px solid #e9ecef;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="http://127.0.0.1:5500/the-end-game-1/home.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="">Chocolate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="">Tiramisu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="">More</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mt-4"> 
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/Gemini_Generated_Image_436hre436hre436h.png" class="d-block w-100" alt="Sale Donut Noel">
+            </div>
+            <div class="carousel-item">
+              <img src="img/hinh_nen.png" class="d-block w-100" alt="Ảnh 2">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Gemini_Generated_Image_436hre436hre436h.png" class="d-block w-100" alt="Ảnh 3">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <h2 class="mt-5 mb-4 text-center">🍩 Các Loại Bánh Đặc Sắc</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img src="https://via.placeholder.com/400x250/795548/FFFFFF?text=Chocolate+Donut" class="card-img-top" alt="Bánh donut sô-cô-la">
+                <div class="card-body">
+                  <h5 class="card-title">Bánh donut sô-cô-la</h5>
+                  <p class="card-text">Sô-cô-la nguyên chất, đậm đà, là lựa chọn số 1 cho người hảo ngọt.</p>
+                  <a href="#" class="btn btn-primary">Mua ngay</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img src="https://via.placeholder.com/400x250/A1887F/FFFFFF?text=Tiramisu+Donut" class="card-img-top" alt="Bánh donut tiramisu">
+                <div class="card-body">
+                  <h5 class="card-title">Bánh donut tiramisu</h5>
+                  <p class="card-text">Hương vị Ý tinh tế với lớp kem Mascarpone và cà phê nhẹ nhàng.</p>
+                  <a href="#" class="btn btn-primary">Mua ngay</a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <img src="https://via.placeholder.com/400x250/F44336/FFFFFF?text=Jelly+Donut" class="card-img-top" alt="Bánh donut mứt">
+                <div class="card-body">
+                  <h5 class="card-title">Bánh donut mứt</h5>
+                  <p class="card-text">Nhân mứt trái cây tươi, chua ngọt, phù hợp cho mọi lứa tuổi.</p>
+                  <a href="#" class="btn btn-primary">Mua ngay</a>
+                </div>
+              </div>
+            </div>
+
+        </div>
+    </div> 
+
+    <footer class="site-footer bg-light mt-5 p-3">
+      <div class="footer-content container">
+        <p class="copyright">© 2025 Công Ty TNHH Q. Mọi quyền được bảo lưu.</p>
+
+        <ul class="footer-links list-unstyled d-flex flex-wrap gap-3">
+          <li><a href="https://maps.app.goo.gl/ExampleAddress">Địa chỉ</a></li>
+          <li><a href="tel:+84908473605">SĐT: 0908473605</a></li>
+          <li><a href="mailto:contact@qdonuts.com">Email</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Điều khoản dịch vụ</a></li>
+        </ul>
+
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=100090510937721">Facebook</a>
+        </div>
+      </div>
+    </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var myCarousel = document.querySelector('#carouselExample');
+    if (myCarousel) {
+      var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 3000,
+        ride: 'carousel'
+      });
+      // Đảm bảo nút chuyển hoạt động
+      var prevBtn = document.querySelector('.carousel-control-prev');
+      var nextBtn = document.querySelector('.carousel-control-next');
+      if (prevBtn) {
+        prevBtn.addEventListener('click', function() {
+          carousel.prev();
+        });
+      }
+      if (nextBtn) {
+        nextBtn.addEventListener('click', function() {
+          carousel.next();
+        });
+      }
+    }
+  });
+</script>

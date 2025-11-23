@@ -1,0 +1,65 @@
+body {
+    background-image: url("img/hinh_nen.png");
+    background-size: cover;        /* hình phủ toàn màn */
+
+    background-repeat: no-repeat;  /* không lặp */
+}
+
+.navbar-brand{
+    color: green;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0; /* Xóa margin mặc định của body */
+}
+
+/* Định dạng cho footer */
+.site-footer {
+    /* Đẩy footer xuống dưới */
+    margin-top: auto; 
+    
+    /* Màu nền và chữ */
+    background-color: #333; /* Màu tối */
+    color: #fff; /* Chữ trắng */
+    padding: 20px 0; /* Khoảng đệm trên và dưới */
+    width: 100%;
+}
+
+/* Căn giữa nội dung footer */
+.footer-content {
+    max-width: 1200px; /* Chiều rộng tối đa */
+    margin: 0 auto; /* Căn giữa theo chiều ngang */
+    padding: 0 20px; /* Khoảng đệm hai bên */
+    text-align: center; /* Căn giữa văn bản */
+}
+
+/* Định dạng cho liên kết */
+.footer-links {
+    list-style: none; /* Xóa dấu chấm đầu dòng */
+    padding: 0;
+    margin: 10px 0;
+}
+
+.footer-links li {
+    display: inline; /* Hiển thị các mục trên cùng một hàng */
+    margin: 0 15px;
+}
+
+.footer-links a, .social-links a {
+    color: #fff; /* Màu liên kết trắng */
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+.footer-links a:hover, .social-links a:hover {
+    color: #ccc; /* Thay đổi màu khi di chuột */
+}
+
+.site-footer {
+    position: fixed; /* Hoặc absolute */
+    bottom: 0;
+    left: 0;
+    /* ... các thuộc tính khác như width, background-color ... */
+}
